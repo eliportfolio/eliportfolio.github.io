@@ -1,0 +1,104 @@
+body
+{
+  background-size: auto;
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat;
+  font-family: 'Georgia', serif;
+  font-size: 22px;
+}
+h1
+{
+  display: inline;
+  font-family: 'AquireLight', serif;
+}
+h3
+{
+  font-size: 2rem;
+  font-family: 'AquireLight', serif;
+}
+.content
+{
+  display: flex;
+  flex-flow: column;
+  margin: 1rem 3rem;
+}
+a
+{
+  font-size: 28px;
+}
+
+.main
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navbar
+{
+  display: flex;
+  justify-content: space-evenly;
+  background-color:lightblue;
+  padding: 4px;
+  margin: 6px;
+  align-items: center;
+  flex: 1 1 0;
+  border-radius: 2rem;
+  border: 1px black solid;
+}
+
+@font-face {
+  font-family: 'AquireLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AquireLight'), url('../fonts/AquireLight.otf') format('truetype');
+}
+
+@media only screen and (max-width:1000px)
+{
+  .navbar
+  {
+    flex-direction: column;
+    height: 80vh;
+    max-width: 15rem
+  }
+  .main
+  {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+#my-picture{
+  height:5rem;
+  width:auto;
+}
+
+a:not(.button)
+{
+  color: blue
+}
+
+a:visited:not(.button)
+{
+  color:blue
+}
+
+.button
+{
+  color: black;
+  font-family: 'AquireLight', serif;
+  padding: 1rem 1rem;
+  background-color: #0088FF;
+  border: 1px black solid;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: 0.35s
+}
+
+.button:hover
+{
+  background-color: blue;
+  color: white;
+  transition: 0.35s
+}
